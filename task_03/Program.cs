@@ -1,35 +1,38 @@
-﻿Console.Write("Введите день недели: ");
+﻿// 
+
+Console.Write("Введите день недели ");
 int day = Convert.ToInt32(Console.ReadLine());
 
-if (day == 1)
+switch (day)
 {
-    Console.Write("понедельник ");
-}
-else if (day == 2)
-{
-    Console.Write("вторник ");
-}
-else if (day == 3)
-{
-    Console.Write("среда "); 
-}
-else if (day == 4)
-{
-    Console.Write("четверг" );
-}
-else if (day == 5)
-{
-    Console.Write("пятница ");
-}
-else if (day == 6)
-{
-    Console.Write("суббота " );
-}
-else if (day == 7)
-{
-    Console.Write("воскресенье ");
-}
-else
-{
-    Console.Write("Такого дня недели нет ");
+    case 1:
+        Console.Write("понедельник ");
+        break;
+
+    case 2:
+        Console.Write("вторник ");
+        break;
+
+    case 3:
+        Console.Write("среда ");
+        break;
+
+    case 4:
+        Console.Write("четверг ");
+        break;
+
+    case 5:
+        Console.Write("пятницца ");
+        break;
+    case 6:
+        Console.Write("суббота ");
+        break;
+
+    case 7:
+        Console.Write("воскресенье ");
+        break;
+
+    default:
+    Console.Write("Не верное значение! ");
+    break;    
 }
